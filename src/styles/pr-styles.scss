@@ -1,5 +1,9 @@
 @import './global.scss';
 
+h4,h5{
+  font-weight: 600;
+}
+
 .project-step:not(:first-child) {
   padding: 48px 0;
 }
@@ -17,9 +21,11 @@
     height: 64px;
     line-height: 64px;
     padding-left: 16px;
+    font-weight: 600;
 
     &.is-current {
       background: $off-white;
+      border-radius: 0 32px 32px 0;
 
       & a{
         color: $brand-red;
