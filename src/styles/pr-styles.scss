@@ -1,0 +1,67 @@
+@import './global.scss';
+
+.project-step:not(:first-child) {
+  padding: 48px 0;
+}
+
+.project-step:first-child {
+  padding-bottom: 48px;
+}
+
+.project-step-list {
+  position: sticky;
+  top: 115px;
+
+  & li {
+    font-size: 18px;
+    height: 64px;
+    line-height: 64px;
+    padding-left: 16px;
+
+    &.is-current {
+      background: $off-white;
+
+      & a{
+        color: $brand-red;
+      }
+    }
+    &:hover{
+      background-color: $off-white;
+      cursor: pointer;
+    }
+  }
+  & a {
+    color: #000000;
+
+    &:hover {
+      text-decoration: none;
+      color:$brand-red;
+      border-bottom: none;
+    }
+  }
+}
+
+
+.project-step{
+  &:not(:last-child) {
+    margin-bottom: 36px;
+    scroll-margin-top:50px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.section {
+  padding: 24px 0;
+}
+
+.gray-box {
+  background-color: $off-white;
+  padding: 48px;
+
+  & ul {
+    list-style: none;
+    padding: 0;
+  }
+}

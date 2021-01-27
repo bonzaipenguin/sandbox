@@ -1,6 +1,22 @@
 @import "~bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&family=Noto+Sans+JP:wght@300;400;700&display=swap');
 
+$brand-red:#EC0046;
+$off-white:#f5f5f5;
+
+a{
+  color:$brand-red;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+
+  &:hover,
+  &:focus{
+    color:$brand-red;
+    border-color: $brand-red;
+    text-decoration: none;
+  }
+}
+
 body{
   font-family: 'Noto Sans JP', sans-serif;
 }
